@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision UI Free - Dashboard</title>
+    <meta name="description" content="Dashboard layout based on Vision UI Free design">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>VISION UI <span>FREE</span></h2>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-divider hr"></div>
+                <ul class="menu-list">
+                    <li class="menu-item active">
+                        <div class="icon-box"><ion-icon name="home"></ion-icon></div>
+                        <span>Dashboard</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="stats-chart"></ion-icon></div>
+                        <span>Tables</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="card"></ion-icon></div>
+                        <span>Billing</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="build"></ion-icon></div>
+                        <span>RTL</span>
+                    </li>
+                </ul>
+
+                <p class="menu-label">ACCOUNT PAGES</p>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="person"></ion-icon></div>
+                        <span>Profile</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="document-text"></ion-icon></div>
+                        <span>Sign In</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-box"><ion-icon name="rocket"></ion-icon></div>
+                        <span>Sign Up</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <ion-icon name="help-circle"></ion-icon>
+                    </div>
+                    <h4>Need help?</h4>
+                    <p>Please check our docs</p>
+                    <a href="#" class="btn btn-docs">DOCUMENTATION</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- HEADER -->
+            <header class="topbar">
+                <div class="page-title">
+                    <div class="breadcrumbs">
+                        <span>Pages</span> / <span>Dashboard</span>
+                    </div>
+                    <h1>Dashboard</h1>
+                </div>
+
+                <div class="topbar-actions">
+                    <div class="search-box">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Type here...">
+                    </div>
+                    <div class="user-actions">
+                        <a href="#" class="action-btn"><ion-icon name="person"></ion-icon> Sign In</a>
+                        <a href="#" class="icon-btn"><ion-icon name="settings-outline"></ion-icon></a>
+                        <a href="#" class="icon-btn"><ion-icon name="notifications-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- METRICS CARDS -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <p class="metric-label">Today's Money</p>
+                        <h3 class="metric-value">$53,000 <span class="trend positive">+55%</span></h3>
+                    </div>
+                    <div class="metric-icon">
+                        <ion-icon name="wallet"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <p class="metric-label">Today's Users</p>
+                        <h3 class="metric-value">2,300 <span class="trend positive">+5%</span></h3>
+                    </div>
+                    <div class="metric-icon">
+                        <ion-icon name="globe"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <p class="metric-label">New Clients</p>
+                        <h3 class="metric-value">+3,052 <span class="trend negative">-14%</span></h3>
+                    </div>
+                    <div class="metric-icon">
+                        <ion-icon name="document-text"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-info">
+                        <p class="metric-label">Total Sales</p>
+                        <h3 class="metric-value">$173,000 <span class="trend positive">+8%</span></h3>
+                    </div>
+                    <div class="metric-icon">
+                        <ion-icon name="cart"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DASHBOARD CONTENT AREA -->
+            <div class="content-grid">
+                <!-- Welcome Card -->
+                <div class="welcome-card hero-card">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">Welcome back,</p>
+                        <h2 class="hero-title">Mark Johnson</h2>
+                        <p class="hero-desc">Glad to see you again!<br>Ask me anything.</p>
+                        <a href="#" class="hero-link">Tap to record <ion-icon
+                                name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </div>
+
+                <!-- Satisfaction Rate -->
+                <div class="widget-card satisfaction-card">
+                    <h3 class="widget-title">Satisfaction Rate</h3>
+                    <p class="widget-subtitle">From all projects</p>
+                    <div class="satisfaction-content">
+                        <!-- Removed inline style, added data-val instead -->
+                        <div class="circular-progress satisfaction-progress" data-val="95">
+                            <div class="inner-circle">
+                                <ion-icon name="happy" class="happy-icon"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="progress-labels">
+                            <span>0%</span>
+                            <div class="main-label">
+                                <strong>95%</strong>
+                                <span>Based on likes</span>
+                            </div>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Referral Tracking -->
+                <div class="widget-card referral-card">
+                    <div class="referral-header">
+                        <h3 class="widget-title">Referral Tracking</h3>
+                        <button class="more-btn"><ion-icon name="ellipsis-horizontal"></ion-icon></button>
+                    </div>
+                    <div class="referral-body">
+                        <div class="referral-stats">
+                            <div class="stat-box">
+                                <p>Invited</p>
+                                <h4>145 people</h4>
+                            </div>
+                            <div class="stat-box">
+                                <p>Bonus</p>
+                                <h4>1,465</h4>
+                            </div>
+                        </div>
+                        <!-- Removed inline style, added data-val instead (93 represents 9.3 out of 10) -->
+                        <div class="circular-progress safety-progress" data-val="93">
+                            <div class="inner-circle">
+                                <span>Safety</span>
+                                <strong>9.3</strong>
+                                <span>Total Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHARTS -->
+            <div class="charts-grid-main">
+                <!-- Sales Overview (Line Chart) -->
+                <div class="chart-wrapper sales-overview">
+                    <h3 class="widget-title">Sales overview</h3>
+                    <p class="widget-subtitle"><span class="trend positive">(+5) more</span> in 2021</p>
+                    <div class="chart-container"
+                        style="position: relative; height:300px; width:100%; margin-top: 20px;">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Active Users (Bar Chart) -->
+                <div class="chart-wrapper active-users">
+                    <div class="chart-container bg-surface-dark"
+                        style="position: relative; height:220px; width:100%; border-radius: 15px; padding: 10px; margin-bottom: 20px;">
+                        <canvas id="usersChart"></canvas>
+                    </div>
+                    <h3 class="widget-title">Active Users</h3>
+                    <p class="widget-subtitle"><span class="trend positive">(+23)</span> than last week</p>
+
+                    <div class="users-stats-grid">
+                        <div class="mini-stat">
+                            <div class="mini-icon" style="background:var(--primary-color)"><ion-icon
+                                    name="wallet"></ion-icon></div>
+                            <p>Users</p>
+                            <h4>32,984</h4>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="mini-icon" style="background:#01b574"><ion-icon name="rocket"></ion-icon></div>
+                            <p>Clicks</p>
+                            <h4>2,42m</h4>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="mini-icon" style="background:#f5365c"><ion-icon name="cart"></ion-icon></div>
+                            <p>Sales</p>
+                            <h4>2,400$</h4>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="mini-stat">
+                            <div class="mini-icon" style="background:#fb6340"><ion-icon name="build"></ion-icon></div>
+                            <p>Items</p>
+                            <h4>320</h4>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM GRID (Tables & Timeline) -->
+            <div class="bottom-grid">
+                <!-- Projects Table -->
+                <div class="widget-card projects-card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="widget-title">Projects</h3>
+                            <p class="widget-subtitle"><ion-icon name="checkmark-circle"
+                                    class="text-success"></ion-icon> <strong>30 done</strong> this month</p>
+                        </div>
+                        <button class="more-btn"><ion-icon name="ellipsis-vertical"></ion-icon></button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>COMPANIES</th>
+                                    <th>MEMBERS</th>
+                                    <th>BUDGET</th>
+                                    <th>COMPLETION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="company-info">
+                                            <div class="company-logo xd"><ion-icon name="logo-xd"></ion-icon></div>
+                                            <span>Chakra Soft UI Version</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=1" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=2" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=3" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=4" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=5" alt="user">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$14,000</strong></td>
+                                    <td>
+                                        <div class="completion-info">
+                                            <span>60%</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="company-info">
+                                            <div class="company-logo atlassian"><ion-icon name="rocket"></ion-icon>
+                                            </div>
+                                            <span>Add Progress Track</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=6" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=7" alt="user">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$3,000</strong></td>
+                                    <td>
+                                        <div class="completion-info">
+                                            <span>10%</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill" style="width: 10%"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="company-info">
+                                            <div class="company-logo slack"><ion-icon name="build"></ion-icon></div>
+                                            <span>Fix Platform Errors</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=8" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=9" alt="user">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>Not set</strong></td>
+                                    <td>
+                                        <div class="completion-info">
+                                            <span>100%</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill"
+                                                    style="width: 100%; background: var(--success);"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="company-info">
+                                            <div class="company-logo spotify"><ion-icon name="logo-apple"></ion-icon>
+                                            </div>
+                                            <span>Launch our Mobile App</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=11" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=12" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=13" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=14" alt="user">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$32,000</strong></td>
+                                    <td>
+                                        <div class="completion-info">
+                                            <span>100%</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill"
+                                                    style="width: 100%; background: var(--success);"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="company-info">
+                                            <div class="company-logo jira"><ion-icon name="cube"></ion-icon></div>
+                                            <span>Add the New Pricing Page</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=21" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=22" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=23" alt="user">
+                                            </div>
+                                            <div class="avatar"><img src="https://i.pravatar.cc/150?img=24" alt="user">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$400</strong></td>
+                                    <td>
+                                        <div class="completion-info">
+                                            <span>25%</span>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill" style="width: 25%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Orders Overview Timeline -->
+                <div class="widget-card timeline-card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="widget-title">Orders overview</h3>
+                            <p class="widget-subtitle"><ion-icon name="arrow-up" class="text-success"></ion-icon>
+                                <strong>+30%</strong> this month
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-success"><ion-icon name="notifications"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>$2400, Design changes</h4>
+                                <p>22 DEC 7:20 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-danger"><ion-icon name="logo-css3"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>New order #4219423</h4>
+                                <p>21 DEC 11:21 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-primary"><ion-icon name="cart"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>Server Payments for April</h4>
+                                <p>21 DEC 9:28 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-warning"><ion-icon name="card"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>New card added for order #3210145</h4>
+                                <p>20 DEC 3:52 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-info"><ion-icon name="cube"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>Unlock packages for Development</h4>
+                                <p>19 DEC 11:35 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon text-magenta"><ion-icon name="logo-xd"></ion-icon></div>
+                            <div class="timeline-content">
+                                <h4>New order #9851258</h4>
+                                <p>18 DEC 4:41 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="#">Marketplace</a>
+                    <a href="#">Blog</a>
+                    <a href="#">License</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
