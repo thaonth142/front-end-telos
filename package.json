@@ -1,0 +1,25 @@
+{
+  "name": "front-end-telos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss  -i ./demo3/input.css -o ./demo3/output.css --watch",
+    "watchDemo5":"npx tailwindcss  -i ./demo5/input.css -o ./demo5/output.css --watch",
+    "watchhomework2":"npx tailwindcss  -i ./homework2/input.css -o ./homework2/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaonth142/front-end-telos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaonth142/front-end-telos/issues"
+  },
+  "homepage": "https://github.com/thaonth142/front-end-telos#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}

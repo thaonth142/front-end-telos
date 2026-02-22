@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="output.css">
+  <style>
+    .abc {
+      /* 
+      display: flex
+      flex-direction: row
+        - justify-content: canh ngang
+          - flex-start: bên trái //default
+          - center: giữa
+          - flex-end: bên phải
+          - space-between:  khoanrg cach giua cac item lớn nhất và bằng nhau
+          - space-around: 
+        - align-items: canh dọc
+          - flex-start: bên trên
+          - center: giữa
+          - flex-end: bên dưới
+      
+      flex-direction: row-reverse
+        - justify-content: canh ngang
+          - flex-start: bên phải + đổi thứ tự //default
+          - center: giữa
+          - flex-end: bên trái
+        - align-items: canh dọc
+          - flex-start: bên trên
+          - center: giữa
+          - flex-end: bên dưới
+
+      flex-direction: column
+        - justify-content: canh dọc
+          - flex-start: bên trên //default
+          - center: giữa
+          - flex-end: bên dưới
+        - align-items: canh ngang
+          - flex-start: bên trái //default
+          - center: giữa
+          - flex-end: bên phải
+
+      flex-direction: column-reverse
+        - justify-content: canh dọc <= rever thawnfg nay
+          - flex-start: bên dưới + đổi position //default
+          - center: giữa
+          - flex-end: bên trên
+        - align-items: canh ngang
+          - flex-start: bên trái //default
+          - center: giữa
+          - flex-end: bên phải
+      */
+    }
+  </style>
+</head>
+
+<body>
+    <div class="bg-primary size-[740px] rounded-full fixed-top-[110px]-right[110px] -z-10 "></div>
+  <div class="size-full flex flex-col items-center container mx-auto">
+    <div class="nav w-full h-18 flex flex-row justify-between items-center">
+      <div class="menu flex flex-row gap-8 justify-start items-center">
+        <div>About</div>
+        <div>Pricing</div>
+        <div>Contact</div>
+      </div>
+      <img src="images/logo.png" alt="" class="logo">
+      <div class="socials flex flex-row gap-3.5 justify-start items-center bg-black ml-[46px]">
+        <img src="images/ico_social_4.png" alt="">
+        <img src="images/ico_social_1.png" alt="">
+        <img src="images/ico_social_2.png" alt="">
+        <img src="images/ico_social_3.png" alt="">
+      </div>
+    </div>
+    <div class="hero w-full h-[1000px] flex flex-row items-center">
+    <div class="left w-1/2 flex flex-col justify-center items-start">
+        <div class="title font-extrabold text-H1 mb-4">Landing page UI Kit</div>
+
+        <div class="description text-Lead1 mt-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reiciendis? Dolor cumque eius maxime odio atque dolorem eaque deserunt officia, saepe velit illum harum voluptatem, unde reprehenderit ipsum iste commodi.</div>
+        <button class="bg-primary w-[154px] h-12 text-white rounded-md"> Get Started</button>
+
+    </div>
+    <div class="right w-1/2">
+        <img src="images/img.png" alt="">
+    </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

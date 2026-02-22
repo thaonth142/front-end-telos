@@ -1,0 +1,10 @@
+p{
+    color: darkblue;
+    border-block-end-color: black;
+}
+.background {
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 80px;
+    overflow-y: auto;
+}
