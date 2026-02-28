@@ -501,9 +501,6 @@ ul {
     width: 140px;
     height: 140px;
     background: conic-gradient(var(--primary-color) calc(var(--val) * 1%), #1a233a calc(var(--val) * 1%));
-    /* Half circle hack using overflow hidden on a container or clip-path */
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
-    margin-bottom: -15px;
 }
 
 .satisfaction-progress .inner-circle {
